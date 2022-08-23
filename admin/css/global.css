@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px ;
+    background-color: #E9DDF0;
+    box-shadow: 0 0 2px black;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 50px;
+}
+.brand h4 {
+    background-image: linear-gradient(to right top, red, blueviolet);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 35px;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+.nav-list ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+.nav-list li {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.nav-list li a{
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-list li a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(19deg);
+    width: 150%;
+    height: 50%;
+    transition: transform .5s ease-in-out;
+}
+.nav-list li a:hover::before{
+    background-color: red;
+    transform: translate(-50%, -50%) rotateZ(200deg);
+}
+.nav-list li a::after{
+    content: attr(data-text);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    margin: 2px;
+    background-color: #995ac4;
+}

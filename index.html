@@ -3,37 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="digitute">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Digitute | Full stack development | course</title>
+    <link rel="stylesheet" href="./admin/css/global.css">
+    <link rel="stylesheet" href="./admin/css/index.css">
 </head>
 <body>
-    <div class="container">
-        <div class="heading">DIGITUTE SUDENT ASSIGMENT'S</div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">
+            <img src="./admin/img/logo.png" alt="digitute-logo">
+            <h4>Digitute</h4>
+        </div>
         <div class="nav-list">
             <ul>
                 <li>
-                    <a href="./Ankush_borde/Index.html">Ankush borde</a>
+                    <a data-text="Students" href="javascript:void(0)">Students</a>
+                    <!-- <div id="sidebar">
+                        <a href="./anil-b/index.html">Anil B</a>
+                        <a href="./ankush-borde/index.html">Ankush Borde</a>
+                        <a href="./mahesh-harne/index.html">Mahesh Harne</a>
+                        <a href="./gayatri-harne/index.html">Gayatri Harne</a>
+                        <a href="./mahesh-tonpe/index.html">Mahesh Tonpe</a>
+                        <a href="./pranjal-patil/index.html">Pranjal Patil</a>
+                        <a href="./pratima-kharchan/index.html">Pratima Kharchan</a>
+                        <a href="./rajesh-lipne/index.html">Rajesh Lipne</a>
+                        <a href="./soumyajit/index.html">Soumyajit</a>
+                        <a href="./rajesh-lipne/index.html">Rushikesh Munde</a>
+                    </div> -->
                 </li>
-                <li>
-                    <a href="./Mahesh_Harne/index.html">Mahesh harne</a>
-                </li>
-                <li><a href="./Gayatri_harne/Index.html">Gayatri_Harne</a></li>
-                <li><a href="./Mahesh_Tonpe/Index.html">Mahesh_Tonpe</a></li>
-                <li><a href="./Pranjal/Index.html">Pranjal</a></li>
-                <li><a href="./Pratima_Kharchan/Index.html">Pratima</a></li>
-                <li><a href="./Rajesh/Index.html">Rajesh</a></li>
-                <li><a href="./Syam_kale/Index.html">Shyam</a></li>
-                <li><a href="./Rushikesh_Munde/Index.html">Rushikesh</a></li>
-                <li><a href="./Somyajit/Index.html">Somyajit</a></li>
-                <li><a href="./Anil Sir/index.html">Anil_Sir</a></li>
+                <li><a data-text="About Us" href="./admin/pages/about.html">About Us</a></li>
+                <li><a data-text="Contact Us" href="./admin/pages/contact.html">Contact Us</a></li>
             </ul>
         </div>
-        <div class="svg">
-            <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 200" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 151.956, 118.862, 1)" offset="0%"/><stop stop-color="rgba(250.767, 196.72, 77.247, 1)" offset="100%"/></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,60L21.8,53.3C43.6,47,87,33,131,33.3C174.5,33,218,47,262,73.3C305.5,100,349,140,393,133.3C436.4,127,480,73,524,46.7C567.3,20,611,20,655,26.7C698.2,33,742,47,785,60C829.1,73,873,87,916,76.7C960,67,1004,33,1047,40C1090.9,47,1135,93,1178,116.7C1221.8,140,1265,140,1309,130C1352.7,120,1396,100,1440,83.3C1483.6,67,1527,53,1571,63.3C1614.5,73,1658,107,1702,113.3C1745.5,120,1789,100,1833,90C1876.4,80,1920,80,1964,66.7C2007.3,53,2051,27,2095,26.7C2138.2,27,2182,53,2225,56.7C2269.1,60,2313,40,2356,33.3C2400,27,2444,33,2487,43.3C2530.9,53,2575,67,2618,83.3C2661.8,100,2705,120,2749,120C2792.7,120,2836,100,2880,96.7C2923.6,93,2967,107,3011,123.3C3054.5,140,3098,160,3120,170L3141.8,180L3141.8,200L3120,200C3098.2,200,3055,200,3011,200C2967.3,200,2924,200,2880,200C2836.4,200,2793,200,2749,200C2705.5,200,2662,200,2618,200C2574.5,200,2531,200,2487,200C2443.6,200,2400,200,2356,200C2312.7,200,2269,200,2225,200C2181.8,200,2138,200,2095,200C2050.9,200,2007,200,1964,200C1920,200,1876,200,1833,200C1789.1,200,1745,200,1702,200C1658.2,200,1615,200,1571,200C1527.3,200,1484,200,1440,200C1396.4,200,1353,200,1309,200C1265.5,200,1222,200,1178,200C1134.5,200,1091,200,1047,200C1003.6,200,960,200,916,200C872.7,200,829,200,785,200C741.8,200,698,200,655,200C610.9,200,567,200,524,200C480,200,436,200,393,200C349.1,200,305,200,262,200C218.2,200,175,200,131,200C87.3,200,44,200,22,200L0,200Z"/></svg>
-        </div>
-        </div>
-    
-    
+    </nav>
+
+    <!-- Main Container -->
+    <main>
+        <section id="landing">
+            <div class="heading">
+                <h4>Welcome to Digitute</h4>
+                <h5 class="typingEffect">Learn know manch</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nemo, vero beatae qui et blanditiis nesciunt. Est laudantium maiores molestiae incidunt natus aliquam facilis minus fugit! Praesentium alias rerum tenetur.</p>
+            </div>
+            <div class="contents">
+                <video src="./admin/video/SampleVideo_1280x720_5mb.mp4" controls></video>
+            </div>
+        </section>
+      
+        <section id="landing2">
+            <div class="card">
+                <img class="card-img" src="admin/img/python.svg" alt="">
+                <h4 class="card-heading">Python development</h4>
+                <div class="card-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ad provident adipisci dolorum beatae quasi soluta commodi, veniam maiores aliquam repellat illum impedit consequatur? Eius, sint odio. Id, ducimus accusamus?</p>
+                    <button class="more-details-btn">more details</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>
